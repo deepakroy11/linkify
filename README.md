@@ -7,7 +7,8 @@ Your all-in-one platform to create, manage, and share branded links and QR Codes
 - **URL Shortener**: Convert long URLs into shortened, shareable links
 - **QR Code Generator**: Create downloadable QR codes from any URL
 - **User Authentication**: Sign up/sign in with secure authentication
-- **Dashboard**: Manage and track your links and QR codes
+- **Dashboard**: Manage and track your links and QR codes with click analytics
+- **Link Management**: Delete links, copy shortened URLs, download QR codes
 - **Dark/Light Theme**: Toggle between themes with persistent storage
 - **Copy to Clipboard**: One-click copying of shortened links
 - **Download QR Codes**: Save QR codes as PNG images
@@ -49,6 +50,7 @@ cp .env.example .env
 Update the environment variables with your backend service URLs:
 ```env
 VITE_API_URL=https://your-backend-api.com/api
+VITE_API_BASE_URL=https://your-shortener-domain.com
 VITE_API_URL_SHORTENER=https://your-shortener-api.com
 VITE_API_QR_GENERATOR=https://your-qr-api.com
 ```
@@ -108,7 +110,13 @@ src/
 ## Pages & Features
 
 - **Home**: Landing page with hero section and feature cards
-- **Dashboard**: Protected route for authenticated users to manage links
+- **Dashboard**: Protected route for authenticated users to manage links with:
+  - View all created links and QR codes
+  - Click tracking and analytics
+  - Copy shortened URLs to clipboard
+  - Download QR codes as PNG files
+  - Delete unwanted links
+  - Empty state with call-to-action for new users
 - **About**: Company information and mission
 - **FAQ**: Frequently asked questions
 - **Pricing**: Free service information with donation options
