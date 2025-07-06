@@ -10,18 +10,10 @@ export default defineConfig({
       output: {
         manualChunks: {
           vendor: ['react', 'react-dom'],
-          ui: ['@heroui/react'],
-          icons: ['react-icons']
+          ui: ['@heroui/react']
         }
       }
     },
-    cssCodeSplit: true,
-    minify: 'terser',
-    terserOptions: {
-      compress: {
-        drop_console: true,
-        drop_debugger: true
-      }
-    }
+    cssCodeSplit: true
   }
 });
