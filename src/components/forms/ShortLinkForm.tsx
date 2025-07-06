@@ -61,7 +61,7 @@ const ShortLinkForm = ({ formToggle, isAuthenticated }: ShortLinkFormProps) => {
 
       const apiURL = import.meta.env.VITE_API_URL;
 
-      const response = await fetch(`${apiURL}/urlshortener/shorten`, {
+      const response = await fetch(`${apiURL}/links/shorten`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ originalUrl, userId }),

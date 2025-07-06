@@ -48,7 +48,7 @@ const QRCodeForm = ({ formToggle, isAuthenticated }: QRCodeFormProps) => {
       const user = authService.getCurrentUser();
       const userId = user ? user.id : null;
 
-      const response = await fetch(`${apiURL}/qrcode/generateqr`, {
+      const response = await fetch(`${apiURL}/links/generateqr`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ originalUrl, userId }),

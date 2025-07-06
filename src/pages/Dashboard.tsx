@@ -41,7 +41,7 @@ const Dashboard = () => {
       if (!user) return;
 
       const response = await fetch(
-        `${import.meta.env.VITE_API_URL}/urlshortener/user/${user.id}/links`,
+        `${import.meta.env.VITE_API_URL}/links/user/${user.id}/`,
         {
           headers: {
             Authorization: `Bearer ${authService.getToken()}`,
@@ -102,7 +102,7 @@ const Dashboard = () => {
 
     try {
       const response = await fetch(
-        `${import.meta.env.VITE_API_URL}/urlshortener/delete/${linkId}`,
+        `${import.meta.env.VITE_API_URL}/links/delete/${linkId}`,
         {
           method: "DELETE",
           headers: {
