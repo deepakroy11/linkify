@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+Disallow: /dashboard
+Disallow: /settings
+Disallow: /signin
+Disallow: /signup
+
+# Crawl delay (optional)
+Crawl-delay: 1
+
+Sitemap: https://your-domain.com/sitemap.xml
