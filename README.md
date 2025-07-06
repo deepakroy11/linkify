@@ -48,9 +48,9 @@ cp .env.example .env
 
 Update the environment variables with your backend service URLs:
 ```env
+VITE_API_URL=https://your-backend-api.com/api
 VITE_API_URL_SHORTENER=https://your-shortener-api.com
 VITE_API_QR_GENERATOR=https://your-qr-api.com
-VITE_API_AUTH_URL=https://your-auth-api.com/api
 ```
 
 ## Getting Started
@@ -94,6 +94,12 @@ src/
 │   ├── Navbar.tsx             # Navigation component
 │   ├── Footer.tsx             # Footer component
 │   └── Animation.tsx          # Background animations
+├── pages/                     # Page components
+├── services/
+│   └── authService.ts         # Authentication service
+├── types/
+│   └── User.ts               # TypeScript type definitions
+├── contexts/                  # React contexts
 ├── App.tsx                    # Main app component
 ├── main.tsx                   # App entry point
 └── providers.tsx              # Context providers
@@ -116,7 +122,14 @@ src/
 The frontend integrates with the following backend services:
 - **URL Shortener Service**: Creates and manages shortened URLs
 - **QR Code Generator Service**: Generates downloadable QR codes
-- **Authentication Service**: Handles user registration and login
+- **Authentication Service**: Handles user registration, login, and OAuth (Google/GitHub coming soon)
+
+Authentication features:
+- Custom email/password authentication
+- JWT token-based sessions
+- Local storage for user data
+- Protected route handling
+- OAuth integration placeholders (Google, GitHub)
 
 Refer to the [backend repository](https://github.com/deepakroyltim/linkify-backend) for API documentation.
 

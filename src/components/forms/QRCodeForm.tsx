@@ -42,13 +42,13 @@ const QRCodeForm = ({ formToggle, isAuthenticated }: QRCodeFormProps) => {
     const formData = new FormData(event.currentTarget);
     const originalUrl = formData.get("originalUrl");
 
-    const apiURL = import.meta.env.VITE_API_QR_GENERATOR;
+    const apiURL = import.meta.env.VITE_API_URL;
 
     try {
       const user = authService.getCurrentUser();
       const userId = user ? user.id : null;
 
-      const response = await fetch(`${apiURL}/generateqr`, {
+      const response = await fetch(`${apiURL}/qrcode/generateqr`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ originalUrl, userId }),
