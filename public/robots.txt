@@ -9,3 +9,10 @@ Disallow: /signup
 Crawl-delay: 1
 
 Sitemap: https://your-domain.com/sitemap.xml
+
+# Additional directives
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /

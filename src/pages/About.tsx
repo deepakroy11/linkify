@@ -1,9 +1,15 @@
 import { FaPaperclip, FaRocket, FaUsers, FaShield } from "react-icons/fa6";
 import Layout from "../components/layout/Layout";
+import SEO from "../components/SEO";
 
 const About = () => {
   return (
     <Layout>
+      <SEO 
+        title="About Linkify | URL Shortener & QR Code Platform"
+        description="Learn about Linkify's mission to simplify link sharing with powerful URL shortening and QR code generation tools. Fast, reliable, and secure."
+        keywords="about linkify, URL shortener platform, QR code generator, link management, company story"
+      />
       <div className="container mx-auto px-4 sm:px-6 py-8 sm:py-12">
         <div className="max-w-4xl mx-auto">
           {/* Hero Section */}

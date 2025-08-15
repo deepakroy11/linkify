@@ -2,23 +2,75 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="/favicon.svg" />
-    <link rel="apple-touch-icon" href="/favicon.svg" />
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    
+    <!-- Favicon and Icons -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="/favicon/site.webmanifest" />
+    
+    <!-- SEO Meta Tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Linkify - Your all-in-one platform to create, manage, and share branded links and QR codes. Shorten URLs, generate QR codes, and track performance with our free, easy-to-use tools." />
+    <meta name="keywords" content="URL shortener, QR code generator, link management, branded links, analytics, free tools, short links, QR codes" />
+    <meta name="author" content="Linkify" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://your-domain.com/" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://your-domain.com/" />
+    <meta property="og:title" content="Linkify | Short Link & QR Code Generator" />
+    <meta property="og:description" content="Create, manage, and share branded links and QR codes. Free URL shortener with analytics and QR code generation tools." />
+    <meta property="og:image" content="https://your-domain.com/Brand-Image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="Linkify" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://your-domain.com/" />
+    <meta property="twitter:title" content="Linkify | Short Link & QR Code Generator" />
+    <meta property="twitter:description" content="Create, manage, and share branded links and QR codes. Free URL shortener with analytics and QR code generation tools." />
+    <meta property="twitter:image" content="https://your-domain.com/Brand-Image.png" />
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Linkify",
+      "description": "Your all-in-one platform to create, manage, and share branded links and QR codes",
+      "url": "https://your-domain.com",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "featureList": [
+        "URL Shortening",
+        "QR Code Generation",
+        "Link Analytics",
+        "Branded Links"
+      ]
+    }
+    </script>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    /> -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"></noscript>
+    
     <style>
       /* Critical CSS - inline only essential styles */
       body { font-family: system-ui, -apple-system, sans-serif; }
     </style>
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"></noscript>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Linkify - Your all-in-one platform to create, manage, and share branded links and QR codes. Shorten URLs, generate QR codes, and track performance with our free, easy-to-use tools." />
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-    <title>Linkify | Short Link | QR Code Generator</title>
+    
+    <title>Linkify | Short Link & QR Code Generator</title>
   </head>
   <body>
     <div id="root"></div>
